@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Belajar Jquery</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+
+	$("#btn1").on('click', function(){
+		$("#iform").load("i_index.php?aksi=entri");
+		});	
+
+
+	$("#btn2").on('click', function(){
+		
+		window.location.href = "index.html"; 
+		});	
+
+
+
+	$("#iform").load("i_index.php?aksi=daftar");
+	// $("#iform").load("http://ipnyaapaya/i_index.php?aksi=daftar");
+
+
+
+
+})
+</script>
+
+
+
+
+
+
+</head>
+
+<body bgcolor="#b3dba8" text="#000000" leftmargin="0" topmargin="0">
+
+<h1>Belajar JQUERY</h1>
+
+
+<hr>
+
+
+<form name="formx2" id="formx2">
+
+
+
+
+
+<table border="1" cellpadding="3" cellspacing="3" width="600" bgcolor="orange">
+	<tr valign="top">
+		<td>
+			<input name="btn2" id="btn2" type="button" value="DAFTAR DATA" class="btn btn-primary">
+						
+			<input name="btn1" id="btn1" type="button" value="FORM ENTRI" class="btn btn-info">
+			
+		</td>		
+	</tr>
+</table>
+
+</form>
+
+
+
+<table border="1" cellpadding="3" cellspacing="3" width="600" height="300" bgcolor="grey">
+	<tr valign="top">
+		<td>
+			
+			<div id="iform"></div>
+			
+			<div id="ihasil"></div>			
+		</td>
+	</tr>
+</table>
+
+
+
+</body>
+</html>
